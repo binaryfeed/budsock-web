@@ -1,2 +1,2 @@
 require './budsock'
-run Sinatra::Aplication
+run Sinatra::Application
