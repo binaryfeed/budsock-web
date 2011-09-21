@@ -12,6 +12,14 @@
 	<meta name="author" content="">
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<meta property="og:title" content="budsock"/>
+  <meta property="og:type" content="product"/>
+  <meta property="og:url" content="http://www.budsock.com/"/>
+  <meta property="og:image" content="http://budsock.heroku.com/img/logo-chrome.png"/>
+  <meta property="og:site_name" content="budsock"/>
+  <meta property="fb:admins" content="500013379,774849792"/>
+  <meta property="og:description" content="Tangle-free earbuds and headphone cords!"/>
 
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
@@ -26,7 +34,18 @@
     Sorry -- we are no longer taking online orders.
 	</header>
 	<div id="main" role="main">
-    <div style="text-align: center;"><img src="img/logo-chrome.png" alt="budsock logo" title="budsock logo"></div>
+    <div style="text-align: center;">
+      <img src="img/logo-chrome.png" alt="budsock logo" title="budsock logo" />
+  	  <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#appId=219173581476948&xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-like" data-href="http://www.budsock.com/" data-send="true" data-width="400" data-show-faces="true" data-colorscheme="dark"></div>
+    </div>
     
     <div class="box">
       <p>To Our Loyal Customers:</p>

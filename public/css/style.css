@@ -204,7 +204,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: 
    ========================================================================== */
    
-#container { min-height: 100%; }
+#container { min-height: 100%; padding: 20px 0 20px 0;}
 
 .signature { font-family: 'Give You Glory', cursive; font-size: 1.3em; }
 
