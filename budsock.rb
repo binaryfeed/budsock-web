@@ -1,5 +1,5 @@
 require 'sinatra'
-  
-get '/', :provides => 'html' do
-  haml :index
+
+get '/' do
+  redirect '/index.html'
 end
