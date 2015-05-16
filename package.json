@@ -1,0 +1,20 @@
+{
+  "author": "Jeffrey Wescott <jeffrey@budsock.com>",
+  "name": "budsock",
+  "domains": [
+  ],
+  "version": "0.0.1",
+  "description": "budsock website",
+  "main": "server.js",
+  "scripts": {},
+  "repository": "https://github.com/givingstage/actionscript-publisher",
+  "dependencies": {
+    "connect": "^2.15.0"
+  },
+  "devDependencies": {},
+  "license": "Copyrighted / All Rights Reserved",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "private": true
+}
