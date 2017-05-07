@@ -16,7 +16,7 @@ export default class Animation extends Component {
 
   componentDidMount() {
     const component = this
-    fetch('/static/budsock-animation-frames.json')
+    fetch('https://raw.githubusercontent.com/jeffreywescott/budsock-web/master/static/budsock-animation-frames.json')
       .then(res => res.json())
       .then(animationFrames => {
         const container = document.getElementById('animation')
