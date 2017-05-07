@@ -3,11 +3,32 @@ import Head from 'next/head'
 import React from 'react'
 
 import Button from 'react-md/lib/Buttons/Button'
+import Toolbar from 'react-md/lib/Toolbars'
 
 import Animation from '../components/animation'
 import Description from '../components/description'
 
 export default () => {
+  const headerLogo = (
+    <img
+      alt='budsock logo'
+      title='budsock'
+      src='/static/logo-chrome.png'
+      width={78}
+      height={78}
+    />
+  )
+  const headerElements = [
+    <Button
+      style={{fontSize: '0.8em', marginRight: '2.2em', marginTop: '1.8em'}}
+      raised
+      secondary
+      label='Buy on Amazon'
+      href='https://www.amazon.com/budsock-White-with-Orange-Logo/dp/B00X83MTAK/ref=as_sl_pc_qf_sp_asin_til?tag=budsock-20&linkCode=w00&linkId=FU365RPNE74ISUPM&creativeASIN=B00X83MTAK'>
+      add_shopping_cart
+    </Button>
+  ]
+
   return (
     <div className='md-grid'>
       <div className='md-cell md-cell--12'>
@@ -31,34 +52,20 @@ export default () => {
           <meta property='og:description' content='Tangle-free earbuds and headphone cords!' />
         </Head>
 
-        <div className='md-grid'>
-          <div className='md-cell md-cell--12 md-cell--middle'>
-            <img
-              alt='budsock logo'
-              title='budsock'
-              src='/static/logo-chrome.png'
-            />
-            <Button
-              style={{marginLeft: '20px', marginBottom: '40px'}}
-              raised
-              secondary
-              label='Buy on Amazon'
-              href='https://www.amazon.com/budsock-White-with-Orange-Logo/dp/B00X83MTAK/ref=as_sl_pc_qf_sp_asin_til?tag=budsock-20&linkCode=w00&linkId=FU365RPNE74ISUPM&creativeASIN=B00X83MTAK'>
-              add_shopping_cart
-            </Button>
-            <style jsx>{`
-              img {
-                width: 100px;
-                height: 100px;
-              }
-          `}</style>
-          </div>
+        <div className='md-grid header'>
+          <Toolbar
+            fixed
+            style={{minHeight: '78px', backgroundColor: 'white'}}
+            title={headerLogo}
+            actions={headerElements}
+          />
         </div>
 
-        <div className='md-grid body'>
+        <div className='md-grid md-toolbar-relative body'>
           <Animation/>
           <Description/>
         </div>
+
       </div>
     </div>
   )

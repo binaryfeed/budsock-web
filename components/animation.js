@@ -41,12 +41,12 @@ export default class Animation extends Component {
         <style jsx>{`
           .hide-sound-control {
             position: absolute;
-            top: 10px;
+            top: 0;
             right: 0;
             width: 20%;
             height: 10%;
             background-color: white;
-            z-index: 1000;
+            z-index: 10;
           }
       `}</style>
       </Card>
