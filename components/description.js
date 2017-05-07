@@ -75,7 +75,7 @@ export default class Description extends Component {
         `}</style>
         </Media>
         <CardText>
-          How many frustrating minutes per day do you spend untangling your earbunds?
+          How many frustrating minutes per day do you spend untangling your earbuds?
         </CardText>
         <CardText>
           The budsock was designed specifically to keep your earbud wires from tangling. It is lightweight and machine-washable, and made with eco-friendly materials. Get yours today!
