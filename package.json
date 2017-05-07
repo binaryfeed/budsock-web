@@ -1,20 +1,20 @@
 {
-  "author": "Jeffrey Wescott <jeffrey@budsock.com>",
-  "name": "budsock",
-  "domains": [
-  ],
-  "version": "0.0.1",
-  "description": "budsock website",
-  "main": "server.js",
-  "scripts": {},
-  "repository": "https://github.com/givingstage/actionscript-publisher",
+  "name": "budsock-web",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
-    "connect": "^2.15.0"
+    "isomorphic-fetch": "^2.2.1",
+    "next": "latest",
+    "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-md": "^1.0.1"
   },
-  "devDependencies": {},
-  "license": "Copyrighted / All Rights Reserved",
-  "engines": {
-    "node": "0.10.x"
-  },
-  "private": true
+  "author": "Jeffrey Wescott <jeffrey@budsock.com>",
+  "license": "ISC"
 }
