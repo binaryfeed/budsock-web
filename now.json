@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "alias": [
+    "budsock.com",
+    "www.budsock.com"
+  ],
+  "builds": [
+     { "src": "package.json", "use": "@now/next" }
+  ]
+}
